@@ -1,4 +1,4 @@
-package com.colleg.project.markshandler;
+package com.colleg.project.markshandler.Adapters;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -9,16 +9,18 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import com.colleg.project.markshandler.Models.modeluser;
+import com.colleg.project.markshandler.R;
 
 import java.util.ArrayList;
 
-public class Adapteradmin extends ArrayAdapter {
+public class Adapteruser extends ArrayAdapter {
 
 
 
-        ArrayList<modelAdmin> mlist;
+        ArrayList<modeluser> mlist;
 
-        public Adapteradmin(@NonNull Context context, int resource, @NonNull ArrayList objects) {
+        public Adapteruser(@NonNull Context context, int resource, @NonNull ArrayList objects) {
             super(context, resource, objects);
 
             mlist = objects;
@@ -30,14 +32,14 @@ public class Adapteradmin extends ArrayAdapter {
 
             LayoutInflater layoutInflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-            convertView = layoutInflater.inflate(R.layout.item_of_listview_admin, parent,false);
+            convertView = layoutInflater.inflate(R.layout.item_of_listview, parent,false);
 
-            TextView textGrid = convertView.findViewById(R.id.text_admin);
-            ImageView imageGrid = convertView.findViewById(R.id.img_admin);
+            TextView subject = convertView.findViewById(R.id.name_of_sub);
+            TextView doctor = convertView.findViewById(R.id.name_of_doc);
 
 
-            textGrid.setText(mlist.get(position).textgrid);
-            imageGrid.setImageResource(mlist.get(position).imagegrid);
+            subject.setText(mlist.get(position).subject_text);
+            doctor.setText(mlist.get(position).doctor_text);
 
 
             return convertView;

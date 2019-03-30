@@ -1,4 +1,4 @@
-package com.colleg.project.markshandler;
+package com.colleg.project.markshandler.Models;
 
 public class modelAdmin {
     public String textgrid ;

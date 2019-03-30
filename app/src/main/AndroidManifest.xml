@@ -9,10 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".SubjectDetilsActivity"></activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".Admin" />
-        <activity android:name=".Login">
+        <activity android:name=".Activitys.Assignment"></activity>
+        <activity android:name=".Activitys.AttendsEnter" />
+        <activity android:name=".Activitys.SubjectDetilsActivity" />
+        <activity android:name=".Activitys.MainActivity" />
+        <activity android:name=".Activitys.Admin" />
+        <activity android:name=".Activitys.Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

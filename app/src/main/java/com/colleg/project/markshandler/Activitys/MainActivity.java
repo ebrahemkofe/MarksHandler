@@ -1,19 +1,22 @@
-package com.colleg.project.markshandler;
+package com.colleg.project.markshandler.Activitys;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
+
+import com.colleg.project.markshandler.Adapters.Adapteruser;
+import com.colleg.project.markshandler.Models.modeluser;
+import com.colleg.project.markshandler.R;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    int[] x = {R.drawable.background,R.drawable.background};
+
     String []y = {"OOP" , "Logic Design"};
+    String[] x = {"Ahmed Ebrahem","Mohamed Adel"};
     ListView listView ;
     ArrayList<modeluser> list = new ArrayList<>();
 

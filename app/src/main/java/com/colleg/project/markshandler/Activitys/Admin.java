@@ -1,8 +1,12 @@
-package com.colleg.project.markshandler;
+package com.colleg.project.markshandler.Activitys;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
+
+import com.colleg.project.markshandler.Adapters.Adapteradmin;
+import com.colleg.project.markshandler.Models.modelAdmin;
+import com.colleg.project.markshandler.R;
 
 import java.util.ArrayList;
 

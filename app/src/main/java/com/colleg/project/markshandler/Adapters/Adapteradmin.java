@@ -1,4 +1,4 @@
-package com.colleg.project.markshandler;
+package com.colleg.project.markshandler.Adapters;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -10,15 +10,18 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.colleg.project.markshandler.R;
+import com.colleg.project.markshandler.Models.modelAdmin;
+
 import java.util.ArrayList;
 
-public class Adapteruser extends ArrayAdapter {
+public class Adapteradmin extends ArrayAdapter {
 
 
 
-        ArrayList<modeluser> mlist;
+        ArrayList<modelAdmin> mlist;
 
-        public Adapteruser(@NonNull Context context, int resource, @NonNull ArrayList objects) {
+        public Adapteradmin(@NonNull Context context, int resource, @NonNull ArrayList objects) {
             super(context, resource, objects);
 
             mlist = objects;
@@ -30,10 +33,10 @@ public class Adapteruser extends ArrayAdapter {
 
             LayoutInflater layoutInflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-            convertView = layoutInflater.inflate(R.layout.item_of_listview, parent,false);
+            convertView = layoutInflater.inflate(R.layout.item_of_listview_admin, parent,false);
 
-            TextView textGrid = convertView.findViewById(R.id.text);
-            ImageView imageGrid = convertView.findViewById(R.id.img);
+            TextView textGrid = convertView.findViewById(R.id.text_admin);
+            ImageView imageGrid = convertView.findViewById(R.id.img_admin);
 
 
             textGrid.setText(mlist.get(position).textgrid);
